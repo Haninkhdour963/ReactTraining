@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import MyFirstComponemt from './MyFirstComponemt'
+import Article from './Article';
 
 function App() {
+  const FirstArticle=`hi this is the first
+  trtrtryyty`
+   const SecondArticle=`hi this is the SecondArticle
+  trtrtryyty`
+    const ThirdArticle=`hi this is the ThirdArticle`
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +27,21 @@ function App() {
           Learn React
         </a>
         <MyFirstComponemt/>
+        <Article content={FirstArticle}name="Ahmed"email="Ahmed@gmail.com"address="Gaza"/>
+        <Article content={SecondArticle}name="Rami"email="Rami@gmail.com"address="Hebron"/>
+        <Article content={ThirdArticle}name="Heno"email="Heno@gmail.com"address="Amman"/>
+
+        <Article  content={ThirdArticle}name="Heno"email="Heno@gmail.com"address="Amman">
+            <div style={{background:"teal"}}>
+              <h2>
+                Hello world
+              </h2>
+              <p style={{background:"orange"}}>
+                dfmdfkljtiyisfklmkslejtrjgkdfmhkfjhkfg
+              </p>
+            </div>
+        </Article>
+        <Article name="Heno"email="Heno@gmail.com"address="Amman"/>
       </header>
     </div>
   );
