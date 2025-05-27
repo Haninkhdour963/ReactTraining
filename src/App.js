@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import MyFirstComponemt from './MyFirstComponemt'
+import RenderingListwithHigherOrders from './RenderingListwithHigherOrders';
 import Article from './Article';
+import UseStateHooksfun from './UseStateHooksfun';
+import MyInput from './MyInput';
+
 
 function App() {
   const FirstArticle=`hi this is the first
@@ -43,6 +47,13 @@ function App() {
         </Article>
         <Article name="Heno"email="Heno@gmail.com"address="Amman"/>
       </header>
+      <br></br>  <br></br>  <br></br>
+ <RenderingListwithHigherOrders />
+    <br></br>  <br></br>  <br></br>
+    <UseStateHooksfun/>
+        <br></br>  <br></br>  <br></br>
+        <br></br>  <br></br>  <br></br>
+     <MyInput/>
     </div>
   );
 }
